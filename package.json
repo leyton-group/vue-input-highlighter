@@ -1,0 +1,28 @@
+{
+  "name": "vue-input-highlighter",
+  "private": true,
+  "version": "0.0.0",
+  "main": "./dist/vue-input-highlighter.umd.js",
+  "module": "./dist/vue-input-highlighter.es.js",
+  "exports": {
+      ".": {
+        "import": "./dist/vue-input-highlighter.es.js",
+        "require": "./dist/vue-input-highlighter.umd.js"
+      }
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vue-tsc": "^1.8.5"
+  }
+}
