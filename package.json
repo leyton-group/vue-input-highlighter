@@ -6,9 +6,10 @@
   "module": "./dist/vue-input-highlighter.es.js",
   "exports": {
     ".": {
-      "import": "./dist/es.js",
-      "require": "./dist/umd.js"
-    }
+      "import": "./dist/vue-input-highlighter.es.js",
+      "require": "./dist/vue-input-highlighter.umd.js"
+    },
+    "./style.css": "./dist/style.css"
   },
   "type": "module",
   "scripts": {

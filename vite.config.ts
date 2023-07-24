@@ -8,7 +8,7 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, 'src/index.js'),
       name: 'vue-input-highlighter',
-      fileName: (format) => `${format}.js`,
+      fileName: (format) => `vue-input-highlighter.${format}.js`,
     },
     rollupOptions: {
       external: ['vue'],
