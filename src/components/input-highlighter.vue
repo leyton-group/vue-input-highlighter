@@ -151,8 +151,9 @@ const handleInputEvent = () => {
 <style scoped>
 
 .input-highlighter {
-    width: 100%;
-    height: 24px;
+    width: 200px;
+    padding: 3px 5px;
+    border: 1px solid black;
     overflow-x: auto;
     white-space: nowrap;
     -ms-overflow-style: none;
