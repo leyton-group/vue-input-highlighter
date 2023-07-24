@@ -1,14 +1,14 @@
 {
   "name": "vue-input-highlighter",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "./dist/vue-input-highlighter.umd.js",
   "module": "./dist/vue-input-highlighter.es.js",
   "exports": {
-      ".": {
-        "import": "./dist/vue-input-highlighter.es.js",
-        "require": "./dist/vue-input-highlighter.umd.js"
-      }
+    ".": {
+      "import": "./dist/es.js",
+      "require": "./dist/umd.js"
+    }
   },
   "type": "module",
   "scripts": {
