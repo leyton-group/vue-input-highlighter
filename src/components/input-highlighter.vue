@@ -30,14 +30,15 @@ const { modelValue, highlights, placeholder } = toRefs(props);
 
 
 // Variables
-const editableElmt = ref(null);
+const editableElmt = ref('');
 const rawText = ref(modelValue.value);
 const highlightRules = [];
 const defaultHighlightTag = 'strong';
+let highlightsSnapshot = [];
 
 
 // Emits
-const emits = defineEmits(['update:modelValue']);
+const emits = defineEmits(['update:modelValue', 'highlight', 'highlights']);
 
 
 // Created
@@ -122,6 +123,30 @@ const setHtmlContent = () => {
     const highlightedString = highlightString(escapedHtmlString);
     editableElmt.value.innerHTML = highlightedString;
 }
+const getAddedHighlights = (currentHighlights) => {
+
+  const currentHighlightsBis = Array.from(currentHighlights);
+  highlightsSnapshot.forEach(item => {
+      const index = currentHighlightsBis.indexOf(item);
+      if (index > -1) {
+        currentHighlightsBis.splice(index, 1);
+      }
+  });
+
+  return currentHighlightsBis;
+
+}
+const numerateHighlights = () => {
+  const currentHighlights = Array.from(editableElmt.value.children).map(item => item.innerHTML);
+
+  if(currentHighlights.length > highlightsSnapshot.length) {
+    emits('highlight', getAddedHighlights(currentHighlights));
+  }
+  
+  highlightsSnapshot = currentHighlights;
+
+  emits('highlights', highlightsSnapshot);
+}
 
 
 // Event handler
@@ -143,6 +168,8 @@ const handleInputEvent = () => {
     });
     range.collapse(true);
     selection.addRange(range);
+
+    numerateHighlights();
 
     emits('update:modelValue', rawText.value);
 }
