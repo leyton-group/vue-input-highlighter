@@ -175,7 +175,7 @@ const handleInputEvent = () => {
 }
 </script>
 
-<style scoped>
+<style>
 
 .input-highlighter {
     width: 200px;
