@@ -1,4 +1,4 @@
-<p align="center"><img src="./assets/banner.png" alt="vue input highlighter banner"></p>
+<p align="center"><img src="./src/assets/banner.png" alt="vue input highlighter banner"></p>
 
 # Vue Input Highlighter
 
@@ -6,7 +6,7 @@ Component that allows content highlighting within an input field based on specif
 
 It enhances user experience by providing visual feedback about specified patterns recognized and improves the interaction the user have with the input.
 
-<p align="center"><img src="./assets/vue-input-highlighter-animation.gif" alt="vue input highlighter banner"></p>
+<p align="center"><img src="./src/assets/vue-input-highlighter-animation.gif" alt="vue input highlighter banner"></p>
 
 
 # Table of contents
