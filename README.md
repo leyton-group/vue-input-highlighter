@@ -1,4 +1,4 @@
-<p align="center"><img src="./assets/banner.png" alt="vue input highlighter banner"></p>
+<p align="center"><img src="./src/assets/banner.png" alt="vue input highlighter banner"></p>
 
 # Vue Input Highlighter
 
@@ -6,7 +6,7 @@ Component that allows content highlighting within an input field based on specif
 
 It enhances user experience by providing visual feedback about specified patterns recognized and improves the interaction the user have with the input.
 
-<p align="center"><img src="./assets/vue-input-highlighter-animation.gif" alt="vue input highlighter banner"></p>
+<p align="center"><img src="./src/assets/vue-input-highlighter-animation.gif" alt="vue input highlighter banner"></p>
 
 
 # Table of contents
@@ -29,7 +29,7 @@ It enhances user experience by providing visual feedback about specified pattern
 - [Props](#props)
 
 
-- [Emits](#emits)
+- [Events](#events)
   
 
 - [Contribution](#contribution)
@@ -126,7 +126,7 @@ The component is based on a 'content editable' div that replicates the behavior 
 
 As the user inputs content, the component evaluates the div's text and analyzes it using regular expressions (regex).
 
-Any fragment that matches the regex is encapsulated within an HTML tag, with the default being <strong> (or as specified) for which the relevant styles are then applied.
+Any fragment that matches the regex is encapsulated within an HTML tag, with the default being \<strong\> (or as specified) for which the relevant styles are then applied.
 
 # Use Cases
 
@@ -164,11 +164,11 @@ List of component "rules" props sub-elements :
 | class       | string value to be mapped inside the class attribute of the matched element tag |
 | tag         | tag used when wrapping the matched element                                      |
 
-# Emits
+# Events
 
-List of all component emits
+List of component custom events
 
-| Emits      | Description                                                                               |
+| Events      | Description                                                                               |
 |------------|-------------------------------------------------------------------------------------------|
 | highlight  | fires whenever one or multiple highlights are matched. return list of newly matched text. |
 | highlights | fires at each input. return list of all matched text by the input.                        |
@@ -186,5 +186,6 @@ Many thanks to :
  - [@karimerrahli](https://github.com/karimerrahli)
  - [@afaddoul](https://github.com/afaddoul)
  - [@AdnaneAm](https://github.com/adnaneam)
+ - [@akiyamaSM](https://github.com/akiyamaSM)
 
 for the reviews and advice
