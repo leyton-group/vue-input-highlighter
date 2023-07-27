@@ -17,7 +17,7 @@ import { ref, toRefs, onMounted } from 'vue';
 // props
 const props = defineProps({
     modelValue: String,
-    highlights: {
+    rules: {
         type: Array,
         default: []
     },
@@ -26,7 +26,7 @@ const props = defineProps({
         default: ''
     }
 });
-const { modelValue, highlights, placeholder } = toRefs(props);
+const { modelValue, rules, placeholder } = toRefs(props);
 
 
 // Variables
@@ -42,7 +42,7 @@ const emits = defineEmits(['update:modelValue', 'highlight', 'highlights']);
 
 
 // Created
-for (const elmt of highlights.value) {
+for (const elmt of rules.value) {
     if(elmt instanceof RegExp) {
         highlightRules.push({
             regex: elmt,
