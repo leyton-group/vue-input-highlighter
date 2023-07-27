@@ -29,7 +29,7 @@ It enhances user experience by providing visual feedback about specified pattern
 - [Props](#props)
 
 
-- [Emits](#emits)
+- [Events](#events)
   
 
 - [Contribution](#contribution)
@@ -164,11 +164,11 @@ List of component "rules" props sub-elements :
 | class       | string value to be mapped inside the class attribute of the matched element tag |
 | tag         | tag used when wrapping the matched element                                      |
 
-# Emits
+# Events
 
-List of all component emits
+List of component custom events
 
-| Emits      | Description                                                                               |
+| Events      | Description                                                                               |
 |------------|-------------------------------------------------------------------------------------------|
 | highlight  | fires whenever one or multiple highlights are matched. return list of newly matched text. |
 | highlights | fires at each input. return list of all matched text by the input.                        |
