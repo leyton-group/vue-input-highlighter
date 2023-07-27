@@ -119,6 +119,8 @@ Import within the scope of a component
 
 Please refer to the following link content as usage example : [codesandbox](https://codesandbox.io/s/admiring-kilby-4h9swj?file=/src/App.vue)
 
+<p align="center"><img src="./src/assets/vue-input-highlighter-demo.gif" alt="vue input highlighter banner"></p>
+
 
 # How it works
 
