@@ -186,5 +186,6 @@ Many thanks to :
  - [@karimerrahli](https://github.com/karimerrahli)
  - [@afaddoul](https://github.com/afaddoul)
  - [@AdnaneAm](https://github.com/adnaneam)
+ - [@akiyamaSM](https://github.com/akiyamaSM)
 
 for the reviews and advice
