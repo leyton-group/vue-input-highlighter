@@ -126,7 +126,7 @@ The component is based on a 'content editable' div that replicates the behavior 
 
 As the user inputs content, the component evaluates the div's text and analyzes it using regular expressions (regex).
 
-Any fragment that matches the regex is encapsulated within an HTML tag, with the default being <strong> (or as specified) for which the relevant styles are then applied.
+Any fragment that matches the regex is encapsulated within an HTML tag, with the default being \<strong\> (or as specified) for which the relevant styles are then applied.
 
 # Use Cases
 
