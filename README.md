@@ -55,6 +55,7 @@ Using yarn :
 Register the component globally :
 
 #### inside main.(js/ts)
+````typescript
 
     import InputHighlighter from 'vue-input-highlighter';
     import 'vue-input-highlighter/style.css';
@@ -65,56 +66,57 @@ Register the component globally :
 
     app.mount('#app')
 
-
+````
 Import within the scope of a component
 
 #### Script Setup
+````typescript
+  <script setup>
 
-    <script setup>
+      import InputHighlighter from 'vue-input-highlighter';
+      import 'vue-input-highlighter/style.css';
 
-        import InputHighlighter from 'vue-input-highlighter';
-        import 'vue-input-highlighter/style.css';
+      import { ref } from 'vue';
 
-        import { ref } from 'vue';
+      const inputValue = ref('');
+  
+  </script>
 
-        const inputValue = ref('');
-    
-    </script>
+  <template>
 
-    <template>
-
-        <input-highlighter
-            v-model="inputValue"
-        />
-    
-    </template>
+      <input-highlighter
+          v-model="inputValue"
+      />
+  
+  </template>
+````
 
 #### Option Api
+````typescript
+  <script>
+      import InputHighlighter from 'vue-input-highlighter';
+      import 'vue-input-highlighter/style.css';
 
-    <script>
-        import InputHighlighter from 'vue-input-highlighter';
-        import 'vue-input-highlighter/style.css';
+      export default {
+          data() {
+              return {
+                  inputValue: ''
+          },
+          components: {
+              InputHighlighter
+          }
+      }
+  </script>
 
-        export default {
-            data() {
-                return {
-                    inputValue: ''
-            },
-            components: {
-                InputHighlighter
-            }
-        }
-    </script>
+  <template>
 
-    <template>
+      <input-highlighter
+          v-model="inputValue"
+      />
 
-        <input-highlighter
-            v-model="inputValue"
-        />
+  </template>
 
-    </template>
-
-
+````
 # Usage example
 
 Please refer to the following link content as usage example : [codesandbox](https://codesandbox.io/s/admiring-kilby-4h9swj?file=/src/App.vue)
