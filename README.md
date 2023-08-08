@@ -57,8 +57,8 @@ Register the component globally :
 #### inside main.(js/ts)
 ````typescript
 
-    import InputHighlighter from 'vue-input-highlighter';
-    import 'vue-input-highlighter/style.css';
+    import InputHighlighter from '@leyton-techlab/vue-input-highlighter';
+    import '@leyton-techlab/vue-input-highlighter/style.css';
 
     const app = createApp(App)
 
@@ -73,12 +73,12 @@ Import within the scope of a component
 ````typescript
   <script setup>
 
-      import InputHighlighter from 'vue-input-highlighter';
-      import 'vue-input-highlighter/style.css';
+    import InputHighlighter from '@leyton-techlab/vue-input-highlighter';
+    import '@leyton-techlab/vue-input-highlighter/style.css';
 
-      import { ref } from 'vue';
+    import { ref } from 'vue';
 
-      const inputValue = ref('');
+    const inputValue = ref('');
   
   </script>
 
