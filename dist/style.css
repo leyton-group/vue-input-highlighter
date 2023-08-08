@@ -1,0 +1,1 @@
+.input-highlighter{width:200px;padding:3px 5px;border:1px solid black;overflow-x:auto;white-space:nowrap;-ms-overflow-style:none;scrollbar-width:none}.input-highlighter::-webkit-scrollbar{display:none}.input-highlighter:focus{outline:0px solid transparent}.input-highlighter[placeholder]:empty:before{content:attr(placeholder);color:#000;opacity:.6}
