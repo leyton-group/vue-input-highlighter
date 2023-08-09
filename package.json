@@ -1,6 +1,6 @@
 {
   "name": "@leyton-techlab/vue-input-highlighter",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "./dist/vue-input-highlighter.umd.js",
   "module": "./dist/vue-input-highlighter.es.js",
   "exports": {
