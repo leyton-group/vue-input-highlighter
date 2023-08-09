@@ -42,12 +42,12 @@ It enhances user experience by providing visual feedback about specified pattern
 
 Using npm :
 
-    $ npm i vue-input-highlighter
+    $ npm i @leyton-techlab/vue-input-highlighter
 
 
 Using yarn :
 
-    $ yarn add vue-input-highlighter
+    $ yarn add @leyton-techlab/vue-input-highlighter
 
 
 # Imports
