@@ -168,6 +168,37 @@ List of component "rules" props sub-elements :
 | class       | string value to be mapped inside the class attribute of the matched element tag |
 | tag         | tag used when wrapping the matched element                                      |
 
+In the case of using `scoped` in `style`
+```vue
+<style lang='scss' scoped>
+...
+</style>
+```
+ the `class` rule will not work, instead use the `style` rule :
+ ```vue
+<script>
+export default {
+  data() {
+    return {
+      rules: [
+        {
+          regex: /(and|or|not|\(|\))/gim,
+          style: `
+            color: #87CEEB;
+            background: none;
+            font-weight: 700;
+            font-family: roboto, sans-serif;
+            box-sizing: border-box;
+          `,
+          tag: "span",
+        },
+      ],
+    };
+  },
+}
+</script>
+```
+
 # Events
 
 List of component custom events
